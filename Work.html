@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>DSA WEBSITE</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<style>
+  .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+.content{
+  padding-left: 100;
+}
+.content{
+  padding-left: 100px;
+  
+  font-size:medium;
+}
+.tag{
+  font-family: cursive;
+  text-align:start;
+  text-decoration-color:chartreuse;
+  
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+	
+  
+    <div class="sidebar">
+      <a class="active" href="#home">Home</a>
+       
+      <a href="#arrays">Arrays</a>
+        <a href="#string">Strings</a>
+        <a href="#linked">Linkedlist</a>
+        <a href="#stack">Stack</a>
+          <a href="#linear">Linear</a>
+          <a href="#binary">Binary</a>
+          <a href="#bubble">Bubble sort</a>
+          <a href="#selection">Selection sort</a>
+          <a href="#insertion">Insertion sort</a>
+          <a href="#quick">Quick sort</a>
+          <a href="#merge">Merge sort</a>
+          <a href="#queue">Queue</a>
+            <a href="#tree">Tree</a>
+          <a href="#graph">Graph</a>
+        
+    </div>
+    <div class="content" id="home">
+<div class="main">
+			<div class="header">
+<div class="info">
+  <div class="tag">
+    <h2>Are you confused from where to learn dsa and are you unable to choose good resources???In this website we are providing the best resources for dsa topic wise and also with the questions to practice.</br></h2>
+  </div>
+
+<h2>What is Data Structure?</h2>
+  Before defining data structures, let’s back up a little and ask, “What is data?” Here’s a quick answer: Data is information optimized for processing and movement, facts and figures stored on computers.</br>
+Data structures are a specific way of organizing data in a specialized format on a computer so that the information can be organized, processed, stored, and retrieved quickly and effectively. They are a means of handling information, rendering the data for easy use.
+Every application, piece of software, or programs foundation consists of two components: algorithms and data. Data is information, and algorithms are rules and instructions that turn the data into something useful to programming.</br>Put another way, remember these two simple equations:</br>
+Related data + Permissible operations on the data = Data Structures</br>
+Data structures + Algorithms = Programs</br></br>
+     This page provides some of the best resources for different data structures (DS) with topic-wise problems.</br>
+For documentation geeks for geeks and javatpoint are best.
+The links for the documentation are -
+<ul>
+<li><a href="https://www.geeksforgeeks.org/data-structures/?ref=shm">Geeks for Geeks</a></li>
+<li><a href="https://www.javatpoint.com/data-structure-tutorial">Javatpoint</a></li>
+</ul>
+
+
+
+<div id="one">
+<h2 id="arrays">1.Arrays</h2>
+The very first and basic topic of DSA.</br>
+<h3>What is Array in Data Structure?</h3>
+An array is a linear data structure for storing more than one data item that has a similar data type. The items of an array are allocated at adjacent memory locations. These memory locations are called elements of that array. The total number of elements in an array is called length.
+The details of an array are accessed about its position. This reference is called index or subscript.The main advantage of an array over any other data structure is any location can be accessed in constant time in an array which makes it so useful in the design of other data structures. So an array is used as a basic building block in many data structures. </br> </br>
+<center><img src="C:\Users\Admin\Downloads\Array.jpeg" alt="Arrays" width="600" height="300"></center></br>
+<h3>Applications of an array:</h3>
+Apart from being widely used in programming, arrays have additional applications as well:</br>
+1. Used in mathematical problems like matrices etc.</br>
+2. They are used in the implementation of other data structures like linked lists etc.</br>
+3. Database records are usually implemented as arrays.</br>
+<h3>YouTube resources for Array-</h3>
+<ol>
+<li><a href="https://youtu.be/n60Dn0UsbEk">Introduction to Arrays and ArrayList</a></li>
+<li><a href="https://youtu.be/p5TDnxAYAZY">Operations on Arrays in Data Structures: Traversal, Insertion, Deletion and Searching</a></li>
+<li><a href="https://youtube.com/playlist?list=PLqM7alHXFySEQDk2MDfbwEdjd2svVJH9p">Geeks for Geeks problem solutions</a></li>
+<li><a href="https://youtube.com/playlist?list=PLDdcY4olLQk3zG-972eMoDJHLIz3FiGA6">Problems from Love Babbar DSA sheet</a></li>
+<li><a href="https://youtube.com/playlist?list=PLt4nG7RVVk1huDVqwMojFsxlz9AXYmKKo">Array problems with implementation in java</a></li>
+</ol>
+<h2>Here are the links for the problems to practice:</h2>
+<h3>Bare-minimum problems:</h3>
+<ul><li><a href="https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews">Top 50 array coding problems for interviews</a></li></ul>
+<h3>Bonus problems:</h3>
+<ul>
+<li><a href="https://www.interviewbit.com/courses/programming/topics/arrays/">Array problems on Interviewbit</a></br></li>
+<li><a href="https://leetcode.com/tag/array/">Array problems on leetcode</a></li>
+</ul>
+</div>
+
+
+
+<div id="two">
+<h2 id="string">2.Strings</h2>
+<h3>What is String?</h3>
+Strings are defined as an array of characters.Strings in C are stored as null character, '', terminated character arrays.
+This means that the length of a string is the number of characters it contains one more to store the null character.
+Common string operations include finding lengths, copying, searching, replacing and counting the occurrences of specific characters and worlds.</br>
+<center><img src="C:\Users\Admin\Downloads\string.jpeg" alt="Strings" width="600" height="300"></center></br>
+<h3>Basic Concepts</h3>
+<ol>
+<li>int length(): Returns the number of characters in the String</li>
+<li>char charAt(int i): Returns the character at i index</li>
+<li>String substring (int i): Return the substring from the ith index character to end.</li>
+<li>String substring (int i, int j): Returns the substring from i to j-1 index.</li>
+<li>String concat( String str): Concatenates specified string to the end of this string.</li>
+<li>int indexOf (String s): Returns the index within the string of the first occurrence of the specified string.</li>
+<li>int compareTo(String anotherString): Compares two string lexicographically.</li>
+<li>String toLowerCase(): Converts all the characters in the String to lower case.</li>
+</ol>
+<h3>YouTube resources for Strings-</h3>
+<ul>
+<li><a href="https://youtu.be/zL1DPZ0Ovlo">Strings and StringBuilder in Java</a></li>
+<li><a href="https://youtu.be/vCRD36bG8xQ">Strings by Apna College</a></li>
+<li><a href="https://youtube.com/playlist?list=PLt4nG7RVVk1gp0v3wg7gWB26lRzseuHQz">String problems with solution</a></li>
+</ul>
+<h2>Problems to Practice-</h2>
+<h3>Bare-minimum:</h3>
+<ul><li><a href="https://www.interviewbit.com/courses/programming/topics/strings/">String problems on interviewbit</a></li></ul>
+<h3>Bonus problems:</h3>
+<ul>
+<li><a href="https://leetcode.com/tag/string/">String problems on leetcode</a></li>
+<li><a href="https://www.hackerrank.com/domains/algorithms?filters%5Bstatus%5D%5B%5D=unsolved&filters%5Bsubdomains%5D%5B%5D=strings&badge_type=problem-solving"> String problems on Hackerrank</a></li>
+</ul>
+</div>
+
+
+<div id="three">
+<h2 id="linked">3.LinkedLists</h2>
+<h3>What is LinkedList in Data Structure?</h3>
+A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers., a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.</br>
+<center><img src="C:\Users\Admin\Downloads\linkedlist.jpeg" alt="LinkedList" width="600" height="300"></center></br>
+<h3>Types of Linked Lists</h3>
+There are 3 different implementations of Linked List available, they are:
+<ol>
+<li>Singly Linked List</li>
+<li>Doubly Linked List</li>
+<li>Circular Linked List</li>
+</ol>
+Let's know more about them and how they are different from each other.</br>
+<h3>Singly Linked List</h3>
+Singly linked lists contain nodes which have a data part as well as an address part i.e. next, which points to the next node in the sequence of nodes.The operations we can perform on singly linked lists are insertion, deletion and traversal.
+<h3>Doubly Linked List</h3>
+In a doubly linked list, each node contains a data part and two addresses, one for the previous node and one for the next node.
+<h3>Circular Linked List</h3>
+In circular linked list the last node of the list holds the address of the first node hence forming a circular chain.
+<h3>YouTube resources for Linked Lists-</h3>
+<ul>
+<li><a href="https://youtu.be/WZFYgcalA0k">Singly Linked List - Insertion(Beginning ,End, Specific Position)(For My Scholars)</a></li>
+<li><a href="https://youtu.be/58YbpRDc4yw">Linked List - Singly + Doubly + Circular (Theory + Code + Implementation)</a></li>
+<li><a href="https://youtu.be/oAja8-Ulz6o">LinkedList in one video</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLKZaSt2df1gz775Mz-2gLpY9sld5wH8We">Linkedlist problem solutions</a></li>
+<li><a href="https://youtube.com/playlist?list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii">Placement series</a></li>
+</ul>
+<h2>Problems to Practice-</h2>
+<h3>Bare-minimum:</h3>
+<ul><li><a href="https://www.interviewbit.com/courses/programming/topics/linked-lists/">LinkedLists problems on interviewbit</a></li></ul>
+<h3>Bonus problems:</h3>
+<ul>
+<li><a href="https://leetcode.com/tag/linked-list/">Linkedlist problems on Leetcode</a></li>
+<li><a href="https://www.geeksforgeeks.org/top-20-linked-list-interview-question/">Top 20 linkedlist interview questions</a></li>
+</ul>
+</div>
+
+
+<div id="four">
+<h2 id="stack">4.Stacks</h2>
+<h3>What is Stack in Data Structure?</h3>
+A stack is a linear data structure, that follows Last In First Out(LIFO) principle or First In Last Out(FILO) principle in which the operations are performed.</br>
+<center><img src="C:\Users\Admin\Downloads\Stack.jpeg" alt="Stack" width="600" height="300"></center></br>
+Mainly the following  basic operations are performed in the stack:</br>
+1.Push: Adds an item in the stack. If the stack is full, then it is said to be an Overflow condition.</br>
+2.Pop: Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.</br>
+3.Peek or Top: Returns the top element of the stack.</br>
+Display:To display the elements present in the stack.</br>
+<h3>Applications of stack:</h3>
+<ol>
+<li>Expression Evaluation</li>
+<li>Expression Conversion<br>
+    i. Infix to Postfix<br>
+    ii. Infix to Prefix<br>
+    iii. Postfix to Infix<br>
+    iv. Prefix to Infix</li>
+<li>Backtracking</li>
+<li>Memory Management</li>
+</ol>
+<h3>YouTube resources for Stacks-</h3>
+<ol>
+<li><a href="https://youtu.be/51xMqsWyDK8">Introduction to Stack & its Operations -Push Pop | Applications of Stack </a></li>
+<li><a href="https://youtu.be/rHQI4mrJ3cg">Stacks and Queues complete tutorial</a></li>
+<li><a href="https://youtu.be/7m1DMYAbdiY">Stack in One Video</a></li>
+<li><a href="https://youtu.be/_abDDg0Jw94">Infix to Postfix</a></li>
+<li><a href="https://youtube.com/playlist?list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd">Stack interview questions</a></li>
+</ol>
+<h2>Here are the links for the problems to practice:-</h2>
+<h3>Bare-minimum:</h3>
+<ul>
+<li><a href="https://www.interviewbit.com/courses/programming/topics/stacks-and-queues/">Stacks and Queues problems on interviewbit</a></li>
+</ul>
+<h3>Bonus problems:</h3>
+<ul>
+<li><a href="https://leetcode.com/tag/stack/">Leetcode Practice problems</a></li>
+<li><a href="https://www.geeksforgeeks.org/java-program-to-implement-linkedlist-api/">Geeks for Geeks stack problems</a></li>
+</ul>
+</div>
+
+
+
+<div id="five">
+<h2>5.Searching Algorithms</h2>
+<p>Searching is an operation or a technique that helps finds the place of a given element or value in the list. Any search is said to be successful or unsuccessful depending upon whether the element that is being searched is found or not</p>
+<h3>Some of the standard searching technique</h3>
+<ol>
+<li>Linear search</li>
+<li>Binary search</li>
+</ol>
+<h3 id="linear">Linear search</h3>
+<p>Linear search is a very basic and simple search algorithm. In Linear search, we search an element or value in a given array by traversing the array from the starting, till the desired element or value is found.</p>
+<center><img src="C:\Users\Admin\Downloads\linear search.jpeg" alt="Linear Search" width="600" height="300"></center></br>
+<h3>Youtube resource for Linear search</h3>
+<ul>
+<li><a href="https://youtu.be/C46QfTjVCNU?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU">Linear Search Algorithm with example</a></li>
+</ul>
+<h3 binary>Binary search</h3>
+<p>Binary Search is used with sorted array or list. In binary search, we follow the following steps:</p>
+<ol>
+<li>We start by comparing the element to be searched with the element in the middle of the list/array</li>
+<li>If we get a match, we return the index of the middle element</li>
+<li>If we do not get a match, we check whether the element to be searched is less or greater than in value than the middle element.</li>
+<li>If the element/number to be searched is greater in value than the middle number, then we pick the elements on the right side of the middle element(as the list/array is sorted, hence on the right, we will have all the numbers greater than the middle number), and start again from the step 1.</li>
+<li>If the element/number to be searched is lesser in value than the middle number, then we pick the elements on the left side of the middle element, and start again from the step 1.</li>
+</ol>
+<center><img src="C:\Users\Admin\Downloads\binary search.jpeg" alt="Binary search" width="600" height="300"></center></br>
+<p>Binary Search is useful when there are large number of elements in an array and they aresorted. So a necessary condition for Binary search to work is that the list/array should be sorted.</p>
+<h2>Features of Binary Search</h2>
+<ol>
+<li>It is great to search through large sorted arrays.</li>
+<li>It has a time complexity of O(log n) which is a very good time complexity. It has a simple implementation</li>
+</ol>
+<h3>Youtube resources for binary  search</h3>	
+<ul>
+<li><a href="https://youtu.be/V_T5NuccwRA?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU"> Binary Search Algorithm with example</a></li></ul>
+</div>
+
+
+
+<div id="six">
+    <h2>6.Sorting</h2>
+    <p>A sorting algorithm is an algorithm that puts elements of a list in a certain order((numerical, chronological, alphabetical, hierarchical etc)</p>
+    <h3 id="bubble">1. Bubble sort</h3>
+    <p>This algorithm uses multiple passes and in each pass the first and second data items are compared. if the first data item is bigger than the second, then the two items are swapped. Next the items in second and third position are compared and if the first one is larger than the second, then they are swapped, otherwise no change in their order. This process continues for each successive pair of data items until all items are sorted.
+    <center><img src="C:\Users\Admin\Downloads\bubble sort.jpeg" alt="Bubble Sort" width="600" height="350"></center></br>
+    <h3 id="selection">2.Selection sort</h3>
+    <p> Selection sort algorithm is one of the simplest sorting algorithm, which sorts the elements in an array by finding the minimum element in each pass from unsorted part and keeps it in the beginning. This sorting technique improves over bubble sort by making only one exchange in each pass.</p>
+    <center><img src="C:\Users\Admin\Downloads\selection sort.jpeg" alt="Seection Sort" width="600" height="350"></center></br>
+    <h3 id="insertion">3.Insertion sort</h3>
+    <p>Insertion sorts works by taking elements from the list one by one and inserting them in theircurrent position into a new sorted list .The steps are:</p>
+    <center><img src="C:\Users\Admin\Downloads\insertion sort.jpeg" alt="Insertion Sort" width="600" height="300"></center></br>
+    <ol>
+    <li> Compare the current element (key) to its predecessor.</li>
+    <li> If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.</li>
+    </ol>
+    <h3 id="quick">4. Quick sort</h3>
+    <p>Quick sort is a divide and conquer algorithm. Quick sort first divides a large list into two smaller sublists: the low elements and the high elements. Quick sort can then recursively sort the sub-lists.The steps are:</p>
+    <ol>
+    <li>Pick an element, called a pivot, from the list</li>
+    <li>Reorder the list so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation</li>
+    <li>Recursively apply the above steps to the sub-list of elements with smaller values and separately the sub-list of elements with greater values.</li>
+    </ol>
+    <center><img src="C:\Users\Admin\Downloads\quick sort.jpeg" alt="Quick sort" width="600" height="350"></center></br>
+    <h3>Youtube resource for Quick sort</h3>
+    <ul><li><a href="https://youtu.be/QN9hnmAgmOc">Quick Sort Algorithm </a></li></ul> 
+    <h3 id="merge">5.Merge sort</h3>   
+    <p>Merge sort is based on Divide and conquer method. It takes the list to be sorted and divide it in half to create two unsorted lists. The two unsorted lists are then sorted and merged to get a sorted list. The two unsorted lists are sorted by continually calling the merge-sort algorithm; we eventually get a list of size 1 which is already sorted. The two lists of size 1 are then merged.</p>	
+    <center><img src="C:\Users\Admin\Downloads\merge sort.jpeg" alt="Merge sort" width="600" height="300"></center></br>
+    <h3>Youtube resource for Merge sort</h3>
+    <ul><li><a href="https://youtu.be/jlHkDBEumP0">Merge sort with example</a></li></ul>
+    </div>
+    
+    
+    
+    <div id="seven">
+    <h2>7.Queue</h2>
+    <p>A queue is a data structure that is best described as "first in, first out". A queue is another special kind of list, where items are inserted at one end called the rear and deleted at the other end called the front. A real world example of a queue is people waiting in line at the bank. As each person enters the bank, he or she is "enqueued" at the back of the line. When a teller becomes available, they are "dequeued" at the front of the line.</p>
+    <h3>Applications of queue</h3>
+    <ol>
+    <li>It is used to schedule the jobs to be processed by the CPU </li>
+    <li>When multiple users send print jobs to a printer, each printing job is kept in the printing queue. Then the printer prints those jobs according to first in first out (FIFO) basis. </li>
+    <li> Breadth first search uses a queue data structure to find an element from a graph.</li>
+    </ol>
+    <center><img src="C:\Users\Admin\Downloads\queue.jpeg" alt="Queue" width="600" height="300"></center></br>
+    <h3>Youtube resource for implementation of queue</h3>
+    <ul>
+    <li><a href="https://youtu.be/zp6pBNbUB2U">Introduction of queue</a></li>
+    <li><a href="https://youtu.be/YqrFeU90Coo?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" >Implementation of queue using Arrays</a></li>
+    <li><a href="https://youtu.be/RN1wzY_tnYU?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU">Queue implementation using linked list</a></li>
+    <li><a href="https://youtu.be/EFO7bbFcOMw?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU">Implement Queue Using Stack</a></li>
+    </ul>
+    </div>
+    
+    
+    
+    
+    <div id="eight">
+    <h2 id="tree">8.Trees</h2>
+    <h3>What is Tree in Data Structure?</h3>
+    A tree is a hierarchical data structure  and it is a collection of entities called nodes. Nodes are connected by edges. Each node contains a value or data, and it may or may not have a child node .The first node of the tree is called the root. If this root node is connected by another node, the root is then a parent node and the connected node is a child.All Tree nodes are connected by links called edges. It’s an important part of trees, because it’s manages the relationship between nodes.Leaves are the last nodes on a tree. They are nodes without children. Like real trees, we have the root, branches, and finally the leaves.
+    <center><img src="C:\Users\Admin\Downloads\tree.jpeg" alt="Tree" width="600" height="300"></center></br>
+    <h3>Applications of Trees-</h3>
+    <ol>
+    <li>Store hierarchical data, like folder structure, organization structure, XML/HTML data.</li>
+    <li>Binary Search Tree is a tree that allows fast search, insert, delete on a sorted data. It also allows finding closest item</li>
+    <li>Heap is a tree data structure which is implemented using arrays and used to implement priority queues.</li>
+    <li>B-Tree and B+ Tree : They are used to implement indexing in databases.</li>
+    </ol>
+    <h3>YouTube resources for Trees-</h3>
+    <ul>
+    <li><a href="https://youtu.be/-DzowlcaUmE">Trees in one video</a></li>
+    <li><a href="https://youtube.com/playlist?list=PLDdcY4olLQk1-yJxgljSQ4ykbI2Bw1CqS">Love Babbar dsa sheet solutions on trees</a></li>
+    <li><a href="https://youtube.com/playlist?list=PLEJXowNB4kPzqcnf9CnjEcgP7r5LaSijB">Leetcode sol on trees</a></li>
+    <li><a href="https://www.youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk">Tree series |Binary Tree |BinarySearch Tree</a></li>
+    </ul>
+    <h2>Problems to Practice-</h2>
+    <h3>Bare-minimum:</h3>
+    <ul><li><a href="https://www.interviewbit.com/courses/programming/topics/tree-data-structure/">Tree data structure</a></li>
+    <li><a href="https://www.interviewbit.com/courses/programming/topics/heaps-and-maps/">Heaps and Maps</a></li>
+    <li><a href="https://www.interviewbit.com/courses/programming/topics/hashing/">Hashing</a></li>
+    </ul>
+    <h3>Bonus problems:</h3>
+    <ul><li><a href="https://leetcode.com/tag/tree/">Leetcode problems on trees</a></li>
+    <li><a href="https://leetcode.com/tag/heap/">Leetcode problems on heap</a></li>
+    <li><a href="https://leetcode.com/tag/trie/">Leetcode problems on trie</a></li>
+    <li><a href="https://leetcode.com/tag/hash-table/">Leetcode problems on hash table</a></li>
+    </ul>
+    </div>
+    
+    
+    
+    <div id="nine">
+    <h2 id="graph">9.Graphs</h2>
+    <h3>What is Graph in Data Structure?</h3>
+    A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.
+    <br>
+    <center><img src="C:\Users\Admin\Downloads\graph.jpeg" alt="Strings" width="600" height="300"></center></br>
+    <h3>Applications of Graphs-</h3>
+    <ol>
+    <li>In Computer science graphs are used to represent the flow of computation.</li>
+    <li>Google maps uses graphs for building transportation systems, where intersection of two(or more) roads are considered to be a vertex and the road connecting twovertices is considered to be an edge, thus their navigation system is based on the algorithm to calculate the shortest path between two vertices.</li>
+    <li>In Facebook, users are considered to be the vertices and if they are friends then there is an edge running between them. Facebook’s Friend suggestion algorithm uses graph theory.Facebook is an example of undirected graph.</li>
+    <li>In World Wide Web, web pages are considered to be the vertices. There is an edge from a page u to other page v if there is a link of page v on page u.This is an example of Directed graph. It was the basic idea behind Google Page Ranking Algorithm.</li>
+    </ol>
+    <h3>YouTube resources for Graphs-</h3>
+    <ul>
+    <li><a href="https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw">Graph series(Take u forward)</a></li>
+    <li><a href="https://youtube.com/playlist?list=PL2q4fbVm1Ik6DCzm9XZJbNwyHtHGclcEh">Graph theory course(Code NCode)</a></li>
+    <li><a href="https://youtube.com/playlist?list=PLEJXowNB4kPzByLnnFYNSCoqtFz0VKLk5">Tech Dose</a></li>
+    </ul>
+    <h2>Problems to Practice-</h2>
+    <h3>Bare-minimum:</h3>
+    <ul><li><a href="https://www.geeksforgeeks.org/top-50-graph-coding-problems-for-interviews/">Geeks For Geeks problems</a></li></ul>
+    <h3>Bonus problems:</h3>
+    <ul><li><a href="https://leetcode.com/tag/graph/">Leetcode problems</a></li>
+    <li><a href="https://www.interviewbit.com/courses/programming/topics/graph-data-structure-algorithms/">Interviewbit problems</a></li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+		
+    </body>
+</html>
